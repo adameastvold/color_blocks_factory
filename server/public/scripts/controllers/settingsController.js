@@ -37,7 +37,7 @@ colorBlocks.controller('SettingsController', ['$scope', 'DataFactory', function(
       colorObject.selectedColor = $scope.selectedColor;
 
       $scope.selectedColorsArray.push(colorObject);
-      console.log('These are the colors you have chosen:', colorObject);
+      console.log('These are the colors you have chosen:', $scope.selectedColorsArray);
       // $scope.formName = '';
     };
 

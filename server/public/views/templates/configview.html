@@ -7,7 +7,7 @@
     <button ng-click="addColor()">Add Color</button>
 </div>
 <div>Colors you have selected:</div>
-  <ul ng-repeat="color in selectedColorsArray">
-    <li>{{color.selectedColor}} <span class="btn btn-danger" ng-click="deleteColor(color.selectedColor)">X</span></li>
-  </ul>
+  <div ng-repeat="color in selectedColorsArray">
+    <div><input value="{{color.selectedColor}}"></input><button class="btn btn-danger" ng-click="deleteColor(color.selectedColor)">delete</button><button class="btn btn-warning">Update</button></div>
+  </div>
 </div>
